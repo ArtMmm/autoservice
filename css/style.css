@@ -360,3 +360,43 @@ body {
 .autopart-btn {
   padding: 17px 54px;
 }
+
+.evacuator {
+  padding-top: 50px;
+}
+
+.evacuator-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.evacuator-left {
+  margin-right: 30px;
+}
+
+.evacuator-list {
+  font-weight: bold;
+  padding-left: 0;
+  max-width: 459px;
+  min-height: 373px;
+}
+
+.evacuator-link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 161.3%;
+  padding-top: 30px;
+  letter-spacing: 3px;
+}
+
+li::marker {
+  color: #D12C2C;
+}
