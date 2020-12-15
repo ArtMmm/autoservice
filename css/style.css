@@ -489,6 +489,7 @@ li::marker {
 }
 
 .slide {
+  padding: 10px;
   margin: auto;
   max-width: 750px;
   min-height: 315px;
