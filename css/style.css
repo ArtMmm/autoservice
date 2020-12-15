@@ -667,7 +667,7 @@ li::marker {
 
 .contact-description {
   font-family: 'Montserrat-Regular';
-  width: 278px;
+  max-width: 278px;
   margin: 0;
 }
 
