@@ -753,8 +753,14 @@ li::marker {
   .evacuator-right {
     margin: auto;
   }
+  .evacuator-btn {
+    margin: auto;
+  }
   .rental-right {
     display: none;
+  }
+  .rental-btn {
+    margin: auto;
   }
   .contact {
     min-height: 390px;
