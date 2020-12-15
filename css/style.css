@@ -397,6 +397,7 @@ button {
 }
 
 .evacuator-list {
+  margin-top: 25px;
   font-weight: bold;
   padding-left: 0;
   max-width: 459px;
@@ -563,6 +564,10 @@ li::marker {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 460px;
+}
+
+.rental-list {
+  margin: 0;
 }
 
 .rental-link {

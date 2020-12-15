@@ -26,7 +26,7 @@ $(document).ready(function(){
   $("#auto").owlCarousel({
     items: 7,
     autoplay: true,
-    loop: false,
+    loop: true,
     nav: false,
     dots: true,
     responsiveClass:true,
