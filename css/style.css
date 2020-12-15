@@ -52,6 +52,10 @@ body {
           box-shadow: 0px 0px 30px #D12C2C;
 }
 
+button {
+  outline: none;
+}
+
 @font-face {
   font-family: 'Labor Union';
   src: url("LaborUnion-Regular.eot");
@@ -349,6 +353,8 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 40px;
 }
 
@@ -378,6 +384,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.evacuator-right {
+  max-width: 460px;
 }
 
 .evacuator-left {
@@ -478,8 +490,8 @@ li::marker {
 
 .slide {
   margin: auto;
-  width: 750px;
-  height: 315px;
+  max-width: 750px;
+  min-height: 315px;
   background: #FFFFFF;
   -webkit-box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.55);
           box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.55);
@@ -492,6 +504,8 @@ li::marker {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .slide-content {
@@ -504,7 +518,7 @@ li::marker {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 150px;
+  min-height: 150px;
 }
 
 .slide-title {
@@ -513,7 +527,7 @@ li::marker {
 }
 
 .slide-text {
-  width: 390px;
+  max-width: 390px;
   text-align: center;
   line-height: 161.3%;
 }
@@ -527,6 +541,11 @@ li::marker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -543,11 +562,6 @@ li::marker {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 460px;
-}
-
-.rental-right {
-  position: absolute;
-  right: 0;
 }
 
 .rental-link {
@@ -637,8 +651,9 @@ li::marker {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  width: 400px;
-  height: 250px;
+  max-width: 400px;
+  min-height: 250px;
+  padding: 20px;
   background: #FFFFFF;
   -webkit-box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.55);
           box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.55);
@@ -657,6 +672,7 @@ li::marker {
 
 .footer {
   background: #000000;
+  padding: 10px;
 }
 
 .footer .container {
@@ -678,4 +694,78 @@ li::marker {
   text-decoration: none;
   color: #ffffff;
   margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+  .info {
+    display: none;
+  }
+  .service {
+    margin-top: 50px;
+    min-height: 335px;
+  }
+  .service-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .service-item {
+    height: 100px;
+    margin: 0;
+  }
+  .service-item:last-child {
+    height: 140px;
+  }
+  .service img {
+    display: none;
+  }
+  .autopart {
+    min-height: 408px;
+  }
+  .autopart-left {
+    margin: auto;
+  }
+  .autopart-right img {
+    width: 100%;
+  }
+  .rental-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reviews {
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-nav {
+    display: none;
+  }
+  .evacuator-left img {
+    display: none;
+  }
+  .evacuator-right {
+    margin: auto;
+  }
+  .rental-right {
+    display: none;
+  }
+  .contact {
+    min-height: 390px;
+  }
+  .contact-map {
+    display: none;
+  }
+  .contact-block {
+    margin: auto;
+    position: initial;
+  }
+  .slide {
+    width: 90%;
+  }
 }
